@@ -29,12 +29,24 @@ public class GestorTareas {
 
 
     // METODO 3
+    /**
+     *Comprueba si una tarea específica existe dentro de la lista
+     *
+     *@param tarea Nombre o descripción de la tarea que se desea buscar.
+     *@return true si la tarea se encuentra en la lista, false en caso contrario.
+     */
     public boolean buscarTarea(String tarea) {
         return tareas.contains(tarea);
     }
 
 
-    // METODO 4 
+    // METODO 4
+    /**
+     *Verifica si la lista de tareas está completamente vacía.
+     *
+     *
+     *@return true si no hay ninguna tarea almacenada, false si contiene al menos una.
+     */
     public boolean estaVacia() {
         return tareas.isEmpty();
     }
